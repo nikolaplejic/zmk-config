@@ -59,7 +59,7 @@
             bindings = <
 &trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans    &trans    &kp DEL
 &kp GRAVE &trans &trans &trans  &trans  &trans                       &kp CAPS    &trans    &trans    &kp INS   &kp HOME  &kp END
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &LEFT       &kp DOWN  &kp UP    &kp RIGHT &kp PG_UP &kp PG_DN
+&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &kp PG_UP &kp PG_DN
 &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &trans    &kp BSLH  &kp PIPE
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
