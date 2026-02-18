@@ -24,5 +24,5 @@ include:
     shield: splitkb_aurora_lily58_right nice_view_adapter nice_view
   - board: nice_nano
     shield: settings_reset
-  - board: xiao_rp2040
+  - board: seeeduino_xiao_rp2040
     shield: macropad
