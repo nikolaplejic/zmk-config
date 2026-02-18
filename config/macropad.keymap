@@ -1,0 +1,36 @@
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    macros {
+        emacs_dismiss: emacs_dismiss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N5>
+                , <&macro_tap &kp N0>
+                ;
+        };
+    };
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &emacs_dismiss	&none     	&none
+                &kp LC(LEFT)  	&kp LC(UP)	&kp LC(RIGHT)
+                &kp LG(LA(E)) 	&none     	&bootloader
+            >;
+        };
+    };
+};
